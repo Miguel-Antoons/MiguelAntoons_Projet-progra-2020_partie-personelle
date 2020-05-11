@@ -5,7 +5,7 @@
  */
 function getPersonnages(genres){
     let xhr = new XMLHttpRequest();
-    xhr.open('get', 'http://localhost:80/serv_getPersonnages?genre=' + genres, true);
+    xhr.open('get', '/serv_getPersonnages?genre=' + genres, true);
     xhr.onload = recupPersonnages;
     xhr.send();
 }
